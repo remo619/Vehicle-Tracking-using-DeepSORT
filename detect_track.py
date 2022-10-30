@@ -31,7 +31,6 @@ class YOLO(object):
         self.iou = 0.5
         self.class_names = self._get_class()
         # fixed size or (None, None)
-        self.boxes, self.scores, self.classes = self.detect_image()
 
     def _get_class(self):
         classes_path = os.path.expanduser(self.classes_path)
