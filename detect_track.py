@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 from PIL import Image
-from time import time
+import time
 import tflite_runtime.interpreter as tflite
 #import deepsort
 from deep_sort import preprocessing
