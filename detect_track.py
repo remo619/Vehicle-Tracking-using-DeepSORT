@@ -102,7 +102,7 @@ def track():
     model = "model_data/mars-small128.pb"
     encoder = gdet.create_box_encoder(model, batch_size =1)
 
-    metric = nn_matching.NearestNeighbourDistanceMetric("cosine", max_cosine_distance, nn_budget)
+    metric = nn_matching.NearestNeighborDistanceMetric("cosine", max_cosine_distance, nn_budget)
     tracker = Tracker(metric)
 
     cap = cv2.VideoCapture("videos/test.mp4")
